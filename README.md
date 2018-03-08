@@ -13,7 +13,7 @@ In HTML, the computer can interpret raw text that is wrapped in HTML elements. T
 In this assignment you will familiarize yourself with HTML by creating a simple web site. Once you have cloned this repository to your classroom Raspberry Pi create a file called `index.html` and open it up using the nano text editor.
 
 ### Step 1
-Open up a tab in the chromium web browser and open up the file `index.html` (press CTRL-O). In your `index.html` file, type in `<h1> </h1>` and type in your name in between <h1> and </h1>. Save the file in nano and reloade the page in the browser. What do you notice? Commit your file with an appripriate log message and push to GitHub.
+Open up a tab in the chromium web browser and open up the file `index.html` (press CTRL-O). In your `index.html` file, type in `<h1> </h1>` and type in your name in between `<h1>` and `</h1>`. Save the file in nano and reloade the page in the browser. What do you notice? Commit your file with an appripriate log message and push to GitHub.
 
 ### Step 2
 !DOCTYPE
