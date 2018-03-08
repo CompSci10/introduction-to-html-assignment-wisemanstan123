@@ -48,7 +48,7 @@ After the `<title>` declaration add the opening (`<html>`) and closing (`</html>
 Before we move forward, it's important that we discuss how HTML elements are structured. A simple example to illustarte this is the following HTML code:
 
 ```
-<p>Hello world</p?
+<p>Hello world</p>
 ```
 
 In this example, the paragraph element is made up of one opening tag (`<p>`), the “Hello world!” text, and a closing tag (`</p>`):
@@ -64,48 +64,36 @@ Most elements require both opening and closing tags, but some call for a single 
 
 
 ### Step 4: The Head
-
 So far you've done two things:
+1. Declared to the browser that your code is HTML.
+2. Added the HTML element (<html>) that will contain the rest of your code.
 
-Declared to the browser that your code is HTML.
-Added the HTML element (<html>) that will contain the rest of your code.
-Let's also give the browser some information about the page. We can do this by adding a <head> element.
+Let's also give the browser some information about the page. We can do this by adding a `<head>` element. The `<head>` element contains the metadata for a web page. Metadata is information about the page that isn't displayed directly on the web page. You'll see an example of this in the next exercise. The opening and closing head tags (`<head></head>`) typically appear as the first item after your first HTML tag.
 
-The <head> element contains the metadata for a web page. Metadata is information about the page that isn't displayed directly on the web page. You'll see an example of this in the next exercise.
+Add the opening and closing `<head>` and `</head>` tags between the opening and closing `<html>` tags.
 
-The opening and closing head tags (<head></head>) typically appear as the first item after your first HTML tag.
+### Step 5: Page Titles
+What kind of metadata about the web page can the `<head>` element contain? If you navigate to any webpage and look at the top of your browser (or at the tab you have open), you'll notice the it has a title. The browser displays the title of the page because the title can be specified directly inside of the `<head>` element, by using a `<title>` tag.
 
-4. Add the opening and closing <head> and </head> tags between the opening and closing <html> tags.
-
-Page Titles
-What kind of metadata about the web page can the <head> element contain?
-
-If you navigate to any webpage and look at the top of your browser (or at the tab you have open), you'll notice the it has a title.
-
-The browser displays the title of the page because the title can be specified directly inside of the <head> element, by using a <title> tag.
-
+```
 <!DOCTYPE html>
 <html>
   <head>
     <title>My Coding Journal</title>
   </head>
 </html>
+```
+
 If we were to open a file containing the HTML code in the example above, the browser would display the words My Coding Journal in the title bar (or in the tab's title).
 
-5. Add a title to your web page using the <title> element. The title can be anything you'd like.
+Add a title to your web page using the `<title>` element. The title can be anything you'd like. Reload the web page and your title should appear in the title bar.
 
-Reload the web page and your title should appear in the title bar.
-
-
-
-The Body
-
-We've added some HTML, but still haven't seen any results in the web browser to the right. Why is that?
-
-Before we can add content that a browser will display, we have to add a body to the HTML file. Only content inside the opening and closing body tags can be displayed to the screen.
+### Step 6: The Body
+We've added some HTML, but still haven't seen any results in the web browser to the right. Why is that? Before we can add content that a browser will display, we have to add a body to the HTML file. Only content inside the opening and closing body tags can be displayed to the screen.
 
 Once the file has a body, many different types of content – including text, images, and buttons – can be added to the body.
 
+```
 <!DOCTYPE html>
 <html>
   <head>
@@ -115,32 +103,32 @@ Once the file has a body, many different types of content – including text, im
 
   </body>
 </html>
-In the example above, the opening body tag (<body>) is placed directly below the closing head tag (</head>), and the closing body tag (</body>) is placed directly above the closing html tag (</html>).
+```
 
-6. Add a body to your web page using the <body> element.
-7. Add the following code between your opening and closing body tags.
+In the example above, the opening body tag (`<body>`) is placed directly below the closing head tag (`</head>`), and the closing body tag (`</body>`) is placed directly above the closing html tag (`</html>`).
 
-<p>Shall I compare thee to a summer's day? Thou art more lovely and more temperate</p>
+Add a body to your web page using the `<body>` element and add the following code between your opening and closing body tags: `<p>Shall I compare thee to a summer's day? Thou art more lovely and more temperate</p>`
 
-Self-closing Tag
-Thus far we have only seen HTML elements with an opening and a closing tag. A few types of elements, however, require only one tag.
+### Step 7: Self-closing Tag
+Thus far we have only seen HTML elements with an opening and a closing tag. A few types of elements, however, require only one tag. Self-closing elements contain all the information the browser needs to render the element inside a single tag. Also, because they are single tags, they cannot wrap around raw text or other elements. The line break element `<br />` is one example of a self-closing tag. You can use it anywhere within your HTML code. The result is a line break in the browser.
 
-Self-closing elements contain all the information the browser needs to render the element inside a single tag. Also, because they are single tags, they cannot wrap around raw text or other elements.
-
-The line break element <br /> is one example of a self-closing tag. You can use it anywhere within your HTML code. The result is a line break in the browser.
-
+```
 <p>line one<br />line two</p>
-In the example above, the paragraph tags (<p>) enclose two phrases, split by a break tag (<br />). Note that single tags, unlike elements with two tags, can't wrap around raw text or other elements.
+```
+
+In the example above, the paragraph tags (`<p>`) enclose two phrases, split by a break tag (`<br />`). Note that single tags, unlike elements with two tags, can't wrap around raw text or other elements.
 
 The code in the example above will result in an output that looks like the following:
 
+```
 line one
 line two
+```
 Without the break tag, the browser would render line one and line two on the same line.
 
-8. Add a self-closing <br /> tag after the question mark ?.
+Add a self-closing `<br />` tag after the question mark `?`.
 
-HTML Structure
+### Step 8: HTML Structure
 
 The rest of this assignment will focus on how HTML is structured and some tools developers use to make code easier to interpret.
 
