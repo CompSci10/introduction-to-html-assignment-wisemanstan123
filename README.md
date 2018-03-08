@@ -45,27 +45,25 @@ Anything between the opening `<html>` and closing `</html>` tags will be interpr
 After the `<title>` declaration add the opening (`<html>`) and closing (`</html>`) HTML tags.
 
 ### Step 4: HTML Anatomy
-Before we move forward, it's important that we discuss how HTML elements are structured. The diagram to the right displays an HTML paragraph element.
+Before we move forward, it's important that we discuss how HTML elements are structured. A simple example to illustarte this is the following HTML code:
 
-In this example, the paragraph element is made up of one opening tag (<p>), the “Hello world!” text, and a closing tag (</p>):
+```
+<p>Hello world</p?
+```
+
+In this example, the paragraph element is made up of one opening tag (`<p>`), the “Hello world!” text, and a closing tag (`</p>`):
 
 Let's quickly review each part of the tag pictured:
-
-HTML Tag - The element name, surrounded by an opening (<) and closing (>) angle bracket.
-
-HTML element (or simply, element) - a unit of content in an HTML document formed by HTML tags and the text or media it contains.
-
-Opening tag - the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets.
-
-Element content - The information (text or other elements) contained between the opening and closing tags of an HTML element.
-
-Closing tag - the second HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside of them, directly after the left angle bracket.
+* HTML Tag - The element name, surrounded by an opening (`<`) and closing (`>`) angle bracket.
+* HTML element (or simply, element) - a unit of content in an HTML document formed by HTML tags and the text or media it contains.
+* Opening tag - the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets.
+* Element content - The information (text or other elements) contained between the opening and closing tags of an HTML element.
+* Closing tag - the second HTML tag used to end an HTML element. Closing tags have a forward slash (`/`) inside of them, directly after the left angle bracket.
 
 Most elements require both opening and closing tags, but some call for a single self-closing tag. We'll encounter examples of both element types in the next few exercises.
 
 
-
-The Head
+### Step 4: The Head
 
 So far you've done two things:
 
