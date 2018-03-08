@@ -29,23 +29,22 @@ In the future, however, a new standard will override HTML5. Future browsers may 
 Add `<!DOCTYPE html>` as the first line in your HTML file.
 
 ### Step 3: Preparing for HTML
-Great! Browsers that read your code will know to expect HTML when they attempt to read your file.
+The `<!DOCTYPE html>` declaration is only the beginning, however. It indicates to the browser that you will use HTML in the document, but it doesn't actually add any HTML structure or content.
 
-The <!DOCTYPE html> declaration is only the beginning, however. It indicates to the browser that you will use HTML in the document, but it doesn't actually add any HTML structure or content.
+To create HTML structure and content, we must add opening and closing `<html>` tags, like so:
 
-
-To create HTML structure and content, we must add opening and closing <html> tags, like so:
-
+`
 <!DOCTYPE html>
 <html>
 
 </html>
-Anything between the opening <html> and closing </html> tags will be interpreted as HTML code. Without these tags, it's possible that browsers could incorrectly interpret your HTML code.
+`
 
+Anything between the opening `<html>` and closing `</html>` tags will be interpreted as HTML code. Without these tags, it's possible that browsers could incorrectly interpret your HTML code.
 
-3. After the <title> declaration add the opening (<html>) and closing (</html>) HTML tags.
+After the `<title>` declaration add the opening (`<html>`) and closing (`</html>`) HTML tags.
 
-HTML Anatomy
+### Step 4: HTML Anatomy
 Before we move forward, it's important that we discuss how HTML elements are structured. The diagram to the right displays an HTML paragraph element.
 
 In this example, the paragraph element is made up of one opening tag (<p>), the “Hello world!” text, and a closing tag (</p>):
