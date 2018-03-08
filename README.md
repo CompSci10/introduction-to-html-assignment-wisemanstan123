@@ -33,12 +33,12 @@ The `<!DOCTYPE html>` declaration is only the beginning, however. It indicates t
 
 To create HTML structure and content, we must add opening and closing `<html>` tags, like so:
 
-`
+```
 <!DOCTYPE html>
 <html>
 
 </html>
-`
+```
 
 Anything between the opening `<html>` and closing `</html>` tags will be interpreted as HTML code. Without these tags, it's possible that browsers could incorrectly interpret your HTML code.
 
