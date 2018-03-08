@@ -288,7 +288,7 @@ Take a look at each emphasis in action:
 <p><strong>The Nile River</strong> is the <em>longest</em> river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).</p>
 ```
 In this example, the <strong> and <em> tags are used to emphasize the text to produce the following:
-
+ c
 The Nile River is the longest river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).
 
 Notice, The Nile River is bolded and longest is in italics.
