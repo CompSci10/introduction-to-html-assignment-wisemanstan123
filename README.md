@@ -50,7 +50,6 @@ Before we move forward, it's important that we discuss how HTML elements are str
 ```
 <p>Hello world</p>
 ```
-
 In this example, the paragraph element is made up of one opening tag (`<p>`), the “Hello world!” text, and a closing tag (`</p>`):
 
 Let's quickly review each part of the tag pictured:
@@ -129,163 +128,165 @@ Without the break tag, the browser would render line one and line two on the sam
 Add a self-closing `<br />` tag after the question mark `?`.
 
 ### Step 8: HTML Structure
+The rest of this assignment will focus on how HTML is structured and some tools developers use to make code easier to interpret. HTML documents are organized as a collection of parent-child relationships. When an element is contained inside another element, it is considered the child of that element. The child element is said to be nested inside of the parent element.
 
-The rest of this assignment will focus on how HTML is structured and some tools developers use to make code easier to interpret.
-
-HTML documents are organized as a collection of parent-child relationships. When an element is contained inside another element, it is considered the child of that element. The child element is said to be nested inside of the parent element.
-
+```
 <body>
   <p>Paragraph</p>
 </body>
-In the example above, the <p> element is nested inside the <body> element. The <p> element is considered a child of the <body> element, the parent.
+```
+In the example above, the `<p>` element is nested inside the `<body>` element. The `<p>` element is considered a child of the `<body>` element, the parent. Since there can be multiple levels of nesting, this analogy can be extended to grandchildren, great-grandchildren and beyond. Let's consider a more complicated example:
 
-Since there can be multiple levels of nesting, this analogy can be extended to grandchildren, great-grandchildren and beyond. Let's consider a more complicated example:
-
+```
 <body>
   <div>
     <h1>Student</h1>
     <p>Get Started</p>
   </div>
 </body>
-In this example, the <body> element is the parent of the <div> element. Both the <h1> and <p> elements are children of the <div> element. Because the <h1> and <p> elements are in the same level, they are considered siblings, and are both grandchildren of the <body> element.
+```
 
-Understanding this hierarchy is important, because child elements can inherit attributes from their parent element.
+In this example, the `<body>` element is the parent of the `<div>` element. Both the `<h1>` and `<p>` elements are children of the `<div>` element. Because the `<h1>` and `<p>` elements are in the same level, they are considered siblings, and are both grandchildren of the `<body>` element. Understanding this hierarchy is important, because child elements can inherit attributes from their parent element.
 
-9. Create a div element where the paragraph you have on your web page is a child of the div element.
+Create a div element where the paragraph you have on your web page is a child of the div element. Add the heading `<h1>Shall I compare thee to a summer’s day? (Sonnet 18)</h1>` as a child of the body element.
 
-10. Add the heading <h1>Shall I compare thee to a summer’s day? (Sonnet 18)</h1> as a child of the body element.
+### Step 9: Whitespace
+As the code in an HTML file grows, it becomes increasingly difficult to keep track of how elements are related. Programmers use two tools to visualize the relationship between elements: whitespace and indentation. Both tools take advantage of the fact that the position of elements in a browser is independent of the amount of whitespace or indentation in the `index.html` file.
 
-Whitespace
-
-As the code in an HTML file grows, it becomes increasingly difficult to keep track of how elements are related. Programmers use two tools to visualize the relationship between elements: whitespace and indentation.
-
-Both tools take advantage of the fact that the position of elements in a browser is independent of the amount of whitespace or indentation in the index.html file.
-
-For example, if you wanted to increase the space between two paragraphs on your web page, you would not be able to accomplish this by adding space between the paragraph elements in the index.html file. The browser ignores whitespace in HTML files when it renders a web page, so it can be used as a tool to make code easier to read and follow.
+For example, if you wanted to increase the space between two paragraphs on your web page, you would not be able to accomplish this by adding space between the paragraph elements in the `index.html` file. The browser ignores whitespace in HTML files when it renders a web page, so it can be used as a tool to make code easier to read and follow.
 
 What makes the example below difficult to read?
 
+```
 <body><p>Paragraph 1</p><p>Paragraph 2</p></body>
+```
 You have to read the entire line to know what elements are present. Compare the example above to this:
 
+```
 <body>
 <p>Paragraph 1</p>
 <p>Paragraph 2</p>
 </body>
+```
 This example is easier to read, because each element is on its own line. While the first example required you to read the entire line of code to identify the elements, this example makes it easy to identify the body tag and two paragraphs.
 
 A browser renders both examples the same way:
 
+```
 Paragraph 1
 Paragraph 2
-In the next exercise you will learn how to use indentation to help visualize nested elements.
+```
+Replace the paragraph you currently have with the following HTML code, making sure you use whitespace to make the code more readable by putting each element on its own line. 
 
-11. Replace the paragraph you currently have with the following HTML code, making sure you use whitespace to make the code more readable by putting each element on its own line. 
+```
 <p>Shall I compare thee to a summer’s day? <br />Thou art more lovely and more temperate.<br />Rough winds do shake the darling buds of May,<br />And summer’s lease hath all too short a date.<br /></p></p>Sometime too hot the eye of heaven shines,<br />And often is his gold complexion dimmed;<br />And every fair from fair sometime declines,</p><p>By chance, or nature’s changing course, untrimmed;<br />But thy eternal summer shall not fade,<br />Nor lose possession of that fair thou ow’st,<br />Nor shall death brag thou wand’rest in his shade,</p><p>When in eternal lines to Time thou grow’st.<br />So long as men can breathe, or eyes can see,<br />So long lives this, and this gives life to thee.</p>
+```
 
-Indentation
+### Step 10: Indentation
+The second tool web developers use to make the structure of code easier to read is indentation. The World Wide Web Consortium, or W3C, is responsible for maintaining the style standards of HTML. At the time of writing, the W3C recommends 2 spaces of indentation when writing HTML code. Although your code will work without exactly two spaces, this standard is followed by the majority of professional web developers. Indentation is used to easily visualize which elements are nested within other elements.
 
-The second tool web developers use to make the structure of code easier to read is indentation.
-
-The World Wide Web Consortium, or W3C, is responsible for maintaining the style standards of HTML. At the time of writing, the W3C recommends 2 spaces of indentation when writing HTML code. Although your code will work without exactly two spaces, this standard is followed by the majority of professional web developers. Indentation is used to easily visualize which elements are nested within other elements.
-
+```
 <body>
   <p>Paragraph 1</p>
   <div>
     <p>Paragraph 2</p>
   </div>
 </body>
+```
 
+In the example above, Paragraph 1 and the `<div>` tag are nested inside of the `<body>` tag, so they are indented two spaces. The Paragraph 2 element is nested inside of the `<div>` tag, so it is indented an additional two spaces. The spaces are inserted using the spacebar on your keyboard.
 
-In the example above, Paragraph 1 and the <div> tag are nested inside of the <body> tag, so they are indented two spaces. The Paragraph 2 element is nested inside of the <div> tag, so it is indented an additional two spaces.
+Indent your code in `index.html` to match the W3C standards.
 
-The spaces are inserted using the spacebar on your keyboard.
-
-12. Indent your code in index.html to match the W3C standards.
-Comments
+### Step 11: Comments
 HTML files also allow you to add comments to your code.
 
-Comments begin with <!-- and end with -->. Any characters in between will be ignored by your browser.
+Comments begin with `<!-- and end with -->`. Any characters in between will be ignored by your browser. For example,
 
+```
 <!-- This is a comment that the browser will not display. -->
-Including comments in your code is helpful for many reasons:
+```
 
-They help you (and others) understand your code if you decide to come back and review it at a much later date.
-They allow you to experiment with new code, without having to delete old code.
+Including comments in your code is helpful for many reasons:
+* They help you (and others) understand your code if you decide to come back and review it at a much later date.
+* They allow you to experiment with new code, without having to delete old code.
+
+```
 <!-- Favorite Films Section -->
 <p>The following is a list of my favorite films:</p>
+```
 In this example, the comment is used to denote that the following text makes up a particular section of the page.
 
+```
 <!-- <p> Test Code </p> -->
+```
+
 In the example above, a valid HTML element (a paragraph element) has been "commented out." This practice is useful when there is code you want to experiment with, or return to, in the future.
 
-13. Add a comment to index.html explaining the purpose of the code.
+Add at least one comment to ```index.html``` explaining the purpose of the code.
 
-Headings
-Headings in HTML can be likened to headings in other types of media. For example, in newspapers, large headings are typically used to capture a reader's attention. Other times, headings are used to describe content, like the title of a movie or an educational article.
-
-HTML follows a similar pattern. In HTML, there are six different headings, or heading elements. Headings can be used for a variety of purposes, like titling sections, articles, or other forms of content.
+### Step 12: Headings
+Headings in HTML can be likened to headings in other types of media. For example, in newspapers, large headings are typically used to capture a reader's attention. Other times, headings are used to describe content, like the title of a movie or an educational article. HTML follows a similar pattern. In HTML, there are six different headings, or heading elements. Headings can be used for a variety of purposes, like titling sections, articles, or other forms of content.
 
 The following is the list of heading elements available in HTML. They are ordered from largest to smallest in size.
 
-<h1> - used for main headings. All other smaller headings are used for subheadings.
-<h2>
-<h3>
-<h4>
-<h5>
-<h6>
+* `<h1>` - used for main headings. All other smaller headings are used for subheadings.
+* `<h2>`
+* `<h3>`
+* `<h4>`
+* `<h5>`
+* `<h6>`
 The following example code uses a headline intended to capture a reader's attention. It uses the largest heading available, the main heading element:
 
+```
 <h1>BREAKING NEWS</h1>
-Below you'll add the headings you saw in Exercise 1. This is how we'll begin to recreate the website we previewed in the opening exercise!
+```
 
-14. In index.html, add an <h1> heading under the opening body tag. The heading should say: Poems by William Shakespeare, change the existing h1-level heading to a h2-level heading and add another h2-level heading below the h1-level heading. The new headings should say: All the worlds a stage.
+In ```index.html``, add an `<h1>` heading under the opening body tag. The heading should say: Poems by William Shakespeare, change the existing h1-level heading to a h2-level heading and add another h2-level heading below the h1-level heading. The new headings should say: All the worlds a stage.
 
+### Step 13: Text Content Tags
+Headings are meant to emphasize or enlarge only a few words. If you want to add blocks of text in HTML, you can use a paragraph, div, or span:
+* Paragraphs (`<p>`) simply contain a block of plain text.
+* `<div>`s can contain any text or other HTML elements. They are primarily used to divide HTML documents into sections.
+* `<span>`s contain short pieces of text or other HTML. They are primarily used to wrap small pieces of content that are on the same line as other content and do not break text into different sections.
 
-
-# Text Content Tags
-Headings are meant to emphasize or enlarge only a few words.
-
-If you want to add blocks of text in HTML, you can use a paragraph, div, or span:
-
-Paragraphs (<p>) simply contain a block of plain text.
-<div>s can contain any text or other HTML elements. They are primarily used to divide HTML documents into sections.
-<span>s contain short pieces of text or other HTML. They are primarily used to wrap small pieces of content that are on the same line as other content and do not break text into different sections.
 Take a look at each of these elements in action below:
 
+```
 <div>
     <p>Technology</p>
 </div>
 <div>
   <p><span>Self-driving cars</span> are anticipated to replace up to 2 million jobs over the next two decades.</p>
 </div>
-In the example above, there are two different <div>s that each contain <p> elements. The second <div> contains a <p> with <span>Self-driving cars</span>. This <span> element separates Self-driving cars from the rest of the text in the paragraph.
+```
+In the example above, there are two different `<div>`s that each contain `<p>` elements. The second <div> contains a `<p>` with `<span>`Self-driving cars`</span>`. This `<span>` element separates Self-driving cars from the rest of the text in the paragraph. As we noted above, the `<div>`s divided blocks of code, while the `<span`> divides inline text, or text that is on the same line as other text.
 
-As we noted above, the <div>s divided blocks of code, while the <span> divides inline text, or text that is on the same line as other text.
-
-Below, we're going to add several <div>s with ids to organize our text into sections. Later, we will use this structure to create links that allow a user to quickly navigate the content of our page.
+Below, we're going to add several `<div>`s with ids to organize our text into sections. Later, we will use this structure to create links that allow a user to quickly navigate the content of our page.
 
 Note: We will explain the purpose of the ids that you will see in a later exercise. An id only needs to be in the opening tag of an element.
 
-15. Below the <h1> element that says Poems by William Shakespeare, add this opening <div> tag: <div id="introduction">. Add the closing </div> tag after the <h2> element that says All the worlds a stage. Always add two spaces of indentation when you nest elements inside of <div>s.
+Below the `<h1>` element that says Poems by William Shakespeare, add this opening `<div>` tag: `<div id="introduction">`. Add the closing `</div>` tag after the `<h2>` element that says All the worlds a stage. Always add two spaces of indentation when you nest elements inside of `<div>`s.
 
-16. Below the <h2> element that says All the worlds a stage, add a paragraph that is indented the same amount of space as the other content inside of this <div>. The paragraph should contain the following text:
+Below the `<h2>` element that says All the worlds a stage, add a paragraph that is indented the same amount of space as the other content inside of this `<div>`. The paragraph should contain the following text:
 
+```
 All the world's a stage, And all the men and women merely players;
 They have their exits and their entrances,
 And one man in his time plays many parts,
 His acts being seven ages.
+```
 
-# Text Style Tags
-Tags provided by HTML exist to organize and describe the content of web pages. Two of these HTML tags are <em> and <strong>. They are used to signal that the text within them should be "emphasized" or "strong."
+### Step 14: Text Style Tags
+Tags provided by HTML exist to organize and describe the content of web pages. Two of these HTML tags are `<em>` and `<strong>`. They are used to signal that the text within them should be "emphasized" or "strong." Later, when you begin to style websites you will decide how you want browsers to display content within `<em>` and `<strong`> tags. However, browsers have built-in style sheets that will generally style these tags in this manner:
 
-Later, when you begin to style websites you will decide how you want browsers to display content within <em> and <strong> tags. However, browsers have built-in style sheets that will generally style these tags in this manner:
+* The `<em>` tag will generally render as italic emphasis.
+* The `<strong>` will generally render as bold emphasis.
 
-The <em> tag will generally render as italic emphasis.
-The <strong> will generally render as bold emphasis.
 Take a look at each emphasis in action:
-
+```
 <p><strong>The Nile River</strong> is the <em>longest</em> river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).</p>
+```
 In this example, the <strong> and <em> tags are used to emphasize the text to produce the following:
 
 The Nile River is the longest river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).
