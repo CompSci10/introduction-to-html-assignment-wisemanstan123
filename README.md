@@ -12,26 +12,23 @@ In HTML, the computer can interpret raw text that is wrapped in HTML elements. T
 ## Instructions for Assignment
 In this assignment you will familiarize yourself with HTML by creating a simple web site. Once you have cloned this repository to your classroom Raspberry Pi create a file called `index.html` and open it up using the nano text editor.
 
-### Step 1
+### Step 1: Set up
 Open up a tab in the chromium web browser and open up the file `index.html` (press CTRL-O). In your `index.html` file, type in `<h1> </h1>` and type in your name in between `<h1>` and `</h1>`. Save the file in nano and reloade the page in the browser. What do you notice? Commit your file with an appripriate log message and push to GitHub.
 
-### Step 2
-!DOCTYPE
-Whether you realize it or not, when you read text, your brain must first identify the text's language. If you can understand that language, then your brain immediately begins to interpret the text. This same process happens whether you're reading a street sign, a book, or a name tag.
-
-Web browsers work in a similar way. They must know what language a document is written in before they can process its contents.
+### Step 2: `<!DOCTYPE html>`
+Whether you realize it or not, when you read text, your brain must first identify the text's language. If you can understand that language, then your brain immediately begins to interpret the text. This same process happens whether you're reading a street sign, a book, or a name tag. Web browsers work in a similar way. They must know what language a document is written in before they can process its contents.
 
 You can let web browsers know that you are using HTML by starting your document with a document type declaration.
 
-The declaration looks like this: <!DOCTYPE html>. This declaration is an instruction. It tells the browser what type of document to expect, along with what version of HTML is being used in the document.
+The declaration looks like this: `<!DOCTYPE html>`. This declaration is an instruction. It tells the browser what type of document to expect, along with what version of HTML is being used in the document.
 
-<!DOCTYPE html> must be the first line of code in all of your HTML documents. If you don't use the declaration, your HTML code will likely still work, however, it's risky. For now, the browser will correctly assume that the html in <!DOCTYPE html> is referring to HTML5, as it is the current standard.
+`<!DOCTYPE html>` must be the first line of code in all of your HTML documents. If you don't use the declaration, your HTML code will likely still work, however, it's risky. For now, the browser will correctly assume that the html in `<!DOCTYPE html>` is referring to HTML5, as it is the current standard.
 
-In the future, however, a new standard will override HTML5. Future browsers may assume you're using a different, newer standard, in which case your document will be interpreted incorrectly. To make sure your document is forever interpreted correctly, always include <!DOCTYPE html> at the very beginning of your HTML documents.
+In the future, however, a new standard will override HTML5. Future browsers may assume you're using a different, newer standard, in which case your document will be interpreted incorrectly. To make sure your document is forever interpreted correctly, always include `<!DOCTYPE html>` at the very beginning of your HTML documents.
 
-2. Add <!DOCTYPE html> as the first line in your HTMl file.
+Add `<!DOCTYPE html>` as the first line in your HTML file.
 
-Preparing for HTML
+### Step 3: Preparing for HTML
 Great! Browsers that read your code will know to expect HTML when they attempt to read your file.
 
 The <!DOCTYPE html> declaration is only the beginning, however. It indicates to the browser that you will use HTML in the document, but it doesn't actually add any HTML structure or content.
