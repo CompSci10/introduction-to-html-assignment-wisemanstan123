@@ -335,20 +335,17 @@ Under the heading saying William Shakespeare create an unordered list. Add the f
 * Death Location:
 Find out what year William Shakespeare was born and died and where and add this information to your unordered list.
 
-# Ordered Lists
-Some lists, however, will require a bit more structure. HTML provides the ordered list for when you need the extra ordering that unordered lists don't provide.
-
-Ordered lists are like unordered lists, except that each list item is numbered. You can create the ordered list with the <ol> tag and then add individual list items to the list using <li> tags.
-
+#33 Ordered Lists
+Some lists, however, will require a bit more structure. HTML provides the ordered list for when you need the extra ordering that unordered lists don't provide. Ordered lists are like unordered lists, except that each list item is numbered. You can create the ordered list with the `<ol>` tag and then add individual list items to the list using `<li>` tags.
+```
 <ol>
   <li>Preheat the oven to 350 degrees.</li>
   <li>Mix whole wheat flour, baking soda, and salt.</li>
   <li>Cream the butter, sugar in separate bowl.</li>
   <li>Add eggs and vanilla extract to bowl.</li>
 </ol>
-
-
-21.  Under the heading the William Shakespeare heading and after the unordered list add the paragraph <p>William Shakespeare's most popular work:</p> followed by an ordered list with the top three most popular pieces of work  by William Shakespeare (do the online research to find out which ones they are).
+```
+Under the heading the William Shakespeare heading and after the unordered list add the paragraph `<p>William Shakespeare's most popular work:</p>` followed by an ordered list with the top three most popular pieces of work by William Shakespeare (do the online research to find out which ones they are).
 
 # Images
 All of the elements you've learned about so far (headings, paragraphs, lists, and spans) share one thing in common: they're composed entirely of text! What if you want to add content to your web page that isn't composed of text, like images?
