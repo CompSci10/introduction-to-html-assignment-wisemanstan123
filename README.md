@@ -278,7 +278,7 @@ His acts being seven ages.
 ```
 
 ### Step 14: Text Style Tags
-Tags provided by HTML exist to organize and describe the content of web pages. Two of these HTML tags are `<em>` and `<strong>`. They are used to signal that the text within them should be "emphasized" or "strong." Later, when you begin to style websites you will decide how you want browsers to display content within `<em>` and `<strong`> tags. However, browsers have built-in style sheets that will generally style these tags in this manner:
+Tags provided by HTML exist to organize and describe the content of web pages. Two of these HTML tags are `<em>` and `<strong>`. They are used to signal that the text within them should be "emphasized" or "strong." Later, when you begin to style websites you will decide how you want browsers to display content within `<em>` and `<strong>` tags. However, browsers have built-in style sheets that will generally style these tags in this manner:
 
 * The `<em>` tag will generally render as italic emphasis.
 * The `<strong>` will generally render as bold emphasis.
@@ -290,27 +290,30 @@ Take a look at each emphasis in action:
 ```
 
 In this example, the `<strong>` and `<em>` tags are used to emphasize the text The Nile River (bolded) and longest (italics).
-17. Emphasize seven ages using the <em> tag.
 
-18. In the poem All the world's a stage, make the words men and women strong using the <strong> tag.
+Emphasize seven ages using the `<em>` tag.
+In the poem All the world's a stage, make the words men and women strong using the `<strong>` tag.
 
-# Line Breaks
-The spacing between code in an HTML file doesn't affect the positioning of elements in the browser. If you are interested in modifying the spacing in the browser, you can use HTML's line break element: <br />.
+### Step 14: Line Breaks
+The spacing between code in an HTML file doesn't affect the positioning of elements in the browser. If you are interested in modifying the spacing in the browser, you can use HTML's line break element: `<br />`. The line break element is a self-closing tag. You can use it anywhere within your HTML code and a line break will be shown in the browser.
 
-The line break element is a self-closing tag. You can use it anywhere within your HTML code and a line break will be shown in the browser.
-
+```
 <p>The Nile River is the longest river <br /> in the world, measuring over 6,850<br /> kilometers long (approximately 4,260 <br /> miles).</p>
+```
+
 The code in the example above will result in an output that looks like the following:
 
+```
 The Nile River is the longest river
 in the world, measuring over 6,850
 kilometers long (approximately 4,260
 miles).
-You may see line breaks written as <br /> or <br>. Both are valid break tags.
+```
+You may see line breaks written as `<br />` or `<br>`. Both are valid break tags.
 
 Note: Line breaks are not the standard way of manipulating the position of HTML elements, but it's likely that you'll come across them every now and then.
 
-19. In the poem All the World’s a Stage, add a line break (<br />) after the comma (,) on the first line.
+In the poem All the World’s a Stage, add a line break (`<br />`) after the comma (,) on the first line.
 
 # Unordered Lists
 So far, all text has been in paragraph form. What if you want to display content in an easy-to-read list?
