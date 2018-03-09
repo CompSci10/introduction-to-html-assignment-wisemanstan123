@@ -347,42 +347,39 @@ Some lists, however, will require a bit more structure. HTML provides the ordere
 ```
 Under the heading the William Shakespeare heading and after the unordered list add the paragraph `<p>William Shakespeare's most popular work:</p>` followed by an ordered list with the top three most popular pieces of work by William Shakespeare (do the online research to find out which ones they are).
 
-# Images
+### Images
 All of the elements you've learned about so far (headings, paragraphs, lists, and spans) share one thing in common: they're composed entirely of text! What if you want to add content to your web page that isn't composed of text, like images?
 
-The <img> tag allows you to add an image to a web page. This is another example of a self-closing tag.
+The `<img>` tag allows you to add an image to a web page. This is another example of a self-closing tag.
 
-<img src="image-location.com" />
-The <img> tag has a required attribute called src. The src attribute must be set to the image's source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored. Note that the end of the <img> tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly.
+```<img src="image-location.com" />```
+
+The `<img>` tag has a required attribute called src. The src attribute must be set to the image's source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored. Note that the end of the `<img>` tag has a forward slash `/`. Self-closing tags may include or omit the final slash — both will render properly.
 
 This example is our first mention of an attribute. However, the ids that we added to our div tags earlier are also attributes!
 
 Attributes provide more information about an element's content. They live directly inside of the opening tag of an element. Attributes are made up of the following two parts:
+* The name of the attribute
+* The value of the attribute
 
-The name of the attribute
-The value of the attribute
-
-
-22. Right before the closing body tag add the following container:
+Right before the closing body tag add the following container:
+```
 <div id="media">
-      <h2>Portrait</h2>
-    </div>
+  <h2>Portrait</h2>
+</div>
+```
 Add an image of William Shakespeare under the Portrait heading. Find an image online and use the URL that points directly to the image.
 
-# Image Alts
-Part of being an exceptional web developer is making your site accessible to users of all backgrounds. Specifically, visually impaired users require more support from your web page so that they can experience the content on your page.
+### Image Alts
+Part of being an exceptional web developer is making your site accessible to users of all backgrounds. Specifically, visually impaired users require more support from your web page so that they can experience the content on your page. HTML helps support visually impaired users with the alt attribute. The alt attribute is applied specifically to the `<img>` element. The value of alt should be a description of the image.
 
-HTML helps support visually impaired users with the alt attribute.
-
-The alt attribute is applied specifically to the <img> element. The value of alt should be a description of the image.
-
+```
 <img src="#" alt="A field of yellow sunflowers" />
+```
 The alt attribute also serves the following purposes:
-
-If an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. This is made possible by the description you provide in the alt attribute.
-
-Visually impaired users often browse the web with the aid of screen reading software. When you include the alt attribute, the screen reading software can read the image's description out loud to the visually impaired user.
+* If an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. This is made possible by the description you provide in the alt attribute.
+* Visually impaired users often browse the web with the aid of screen reading software. When you include the alt attribute, the screen reading software can read the image's description out loud to the visually impaired user.
 
 Note: If the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should not be used.
 
-23. Add the alt attribute to the image. make sure the description actually describes the image.
+Add the alt attribute to the image. make sure the description actually describes the image.
