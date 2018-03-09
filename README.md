@@ -315,26 +315,24 @@ Note: Line breaks are not the standard way of manipulating the position of HTML 
 
 In the poem All the World’s a Stage, add a line break (`<br />`) after the comma (,) on the first line.
 
-# Unordered Lists
-So far, all text has been in paragraph form. What if you want to display content in an easy-to-read list?
+### Unordered Lists
+So far, all text has been in paragraph form. What if you want to display content in an easy-to-read list? In HTML, you can use an unordered list tag (`<ul>`) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.
 
-In HTML, you can use an unordered list tag (<ul>) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.
-
-The <ul> element cannot hold raw text and cannot automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the <li> tag. The <li> or list item tag is used to describe an item in a list.
-
+The `<ul>` element cannot hold raw text and cannot automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the `<li>` tag. The `<li>` or list item tag is used to describe an item in a list.
+```
 <ul>
   <li>Limes</li>
   <li>Tortillas</li>
   <li>Chicken</li>
 </ul>
-In the example above, the list was created using the <ul> tag and all individual list items were added using <li> tags.
+```
+In the example above, the list was created using the `<ul>` tag and all individual list items were added using `<li>` tags.
 
-20. Under the heading saying William Shakespeare create an unordered list. Add the following items to the list:
+Under the heading saying William Shakespeare create an unordered list. Add the following items to the list:
 * Birth Date: 
 * Death Date:
 * Birth Location:
 * Death Location:
-
 Find out what year William Shakespeare was born and died and where and add this information to your unordered list.
 
 # Ordered Lists
