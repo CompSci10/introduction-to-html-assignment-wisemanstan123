@@ -284,14 +284,12 @@ Tags provided by HTML exist to organize and describe the content of web pages. T
 * The `<strong>` will generally render as bold emphasis.
 
 Take a look at each emphasis in action:
+
 ```
 <p><strong>The Nile River</strong> is the <em>longest</em> river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).</p>
 ```
-In this example, the <strong> and <em> tags are used to emphasize the text to produce the following:
- c
-The Nile River is the longest river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).
 
-Notice, The Nile River is bolded and longest is in italics.
+In this example, the `<strong>` and `<em>` tags are used to emphasize the text The Nile River (bolded) and longest (italics).
 17. Emphasize seven ages using the <em> tag.
 
 18. In the poem All the world's a stage, make the words men and women strong using the <strong> tag.
