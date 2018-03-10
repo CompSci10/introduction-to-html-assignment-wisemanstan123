@@ -13,7 +13,7 @@ In HTML, the computer can interpret raw text that is wrapped in HTML elements. T
 In this assignment you will familiarize yourself with HTML by creating a simple web site. Once you have cloned this repository to your classroom Raspberry Pi create a file called `index.html` and open it up using the nano text editor.
 
 ### Step 1: Set up
-- [ ] Open up a tab in the chromium web browser and open up the file `index.html` (press CTRL-O). In your `index.html` file, type in `<h1> </h1>` and type in your name in between `<h1>` and `</h1>`. Save the file in nano and reloade the page in the browser. What do you notice? Commit your file with an appripriate log message and push to GitHub.
+- [ ] Open up a tab in the chromium web browser and open up the file `index.html` (press CTRL-O). In your `index.html` file, type in `<h1> </h1>` and type in your name in between `<h1>` and `</h1>`. Save the file in nano and reloade the page in the browser. What do you notice? Commit your file with an appropriate log message and push to GitHub.
 
 ### Step 2: `<!DOCTYPE html>`
 Whether you realize it or not, when you read text, your brain must first identify the text's language. If you can understand that language, then your brain immediately begins to interpret the text. This same process happens whether you're reading a street sign, a book, or a name tag. Web browsers work in a similar way. They must know what language a document is written in before they can process its contents.
@@ -26,27 +26,24 @@ The declaration looks like this: `<!DOCTYPE html>`. This declaration is an instr
 
 In the future, however, a new standard will override HTML5. Future browsers may assume you're using a different, newer standard, in which case your document will be interpreted incorrectly. To make sure your document is forever interpreted correctly, always include `<!DOCTYPE html>` at the very beginning of your HTML documents.
 
-Add `<!DOCTYPE html>` as the first line in your HTML file.
+- [ ] Add `<!DOCTYPE html>` as the first line in your HTML file.
 
 ### Step 3: Preparing for HTML
 The `<!DOCTYPE html>` declaration is only the beginning, however. It indicates to the browser that you will use HTML in the document, but it doesn't actually add any HTML structure or content.
 
 To create HTML structure and content, we must add opening and closing `<html>` tags, like so:
-
 ```
 <!DOCTYPE html>
 <html>
 
 </html>
 ```
-
 Anything between the opening `<html>` and closing `</html>` tags will be interpreted as HTML code. Without these tags, it's possible that browsers could incorrectly interpret your HTML code.
 
-After the `<title>` declaration add the opening (`<html>`) and closing (`</html>`) HTML tags.
+- [ ] After the `<title>` declaration add the opening (`<html>`) and closing (`</html>`) HTML tags.
 
 ### Step 4: HTML Anatomy
-Before we move forward, it's important that we discuss how HTML elements are structured. A simple example to illustarte this is the following HTML code:
-
+Before we move forward, it's important that we discuss how HTML elements are structured. A simple example to illustrate this is the following HTML code:
 ```
 <p>Hello world</p>
 ```
@@ -59,8 +56,7 @@ Let's quickly review each part of the tag pictured:
 * Element content - The information (text or other elements) contained between the opening and closing tags of an HTML element.
 * Closing tag - the second HTML tag used to end an HTML element. Closing tags have a forward slash (`/`) inside of them, directly after the left angle bracket.
 
-Most elements require both opening and closing tags, but some call for a single self-closing tag. We'll encounter examples of both element types in the next few exercises.
-
+Most elements require both opening and closing tags, but some call for a single self-closing tag. We will encounter examples of both element types in the next few exercises.
 
 ### Step 4: The Head
 So far you've done two things:
@@ -69,11 +65,10 @@ So far you've done two things:
 
 Let's also give the browser some information about the page. We can do this by adding a `<head>` element. The `<head>` element contains the metadata for a web page. Metadata is information about the page that isn't displayed directly on the web page. You'll see an example of this in the next exercise. The opening and closing head tags (`<head></head>`) typically appear as the first item after your first HTML tag.
 
-Add the opening and closing `<head>` and `</head>` tags between the opening and closing `<html>` tags.
+- [ ] Add the opening and closing `<head>` and `</head>` tags between the opening and closing `<html>` tags.
 
 ### Step 5: Page Titles
 What kind of metadata about the web page can the `<head>` element contain? If you navigate to any webpage and look at the top of your browser (or at the tab you have open), you'll notice the it has a title. The browser displays the title of the page because the title can be specified directly inside of the `<head>` element, by using a `<title>` tag.
-
 ```
 <!DOCTYPE html>
 <html>
@@ -82,10 +77,9 @@ What kind of metadata about the web page can the `<head>` element contain? If yo
   </head>
 </html>
 ```
-
 If we were to open a file containing the HTML code in the example above, the browser would display the words My Coding Journal in the title bar (or in the tab's title).
 
-Add a title to your web page using the `<title>` element. The title can be anything you'd like. Reload the web page and your title should appear in the title bar.
+- [ ] Add a title to your web page using the `<title>` element. The title should say `The poetry of Shakespear`. Reload the web page and your title should appear in the title bar.
 
 ### Step 6: The Body
 We've added some HTML, but still haven't seen any results in the web browser to the right. Why is that? Before we can add content that a browser will display, we have to add a body to the HTML file. Only content inside the opening and closing body tags can be displayed to the screen.
