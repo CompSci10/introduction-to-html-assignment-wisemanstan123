@@ -315,7 +315,7 @@ Note: Line breaks are not the standard way of manipulating the position of HTML 
 
 In the poem All the World’s a Stage, add a line break (`<br />`) after the comma (,) on the first line.
 
-### Unordered Lists
+### Step 15: Unordered Lists
 So far, all text has been in paragraph form. What if you want to display content in an easy-to-read list? In HTML, you can use an unordered list tag (`<ul>`) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.
 
 The `<ul>` element cannot hold raw text and cannot automatically format raw text into an unordered list of items. Individual list items must be added to the unordered list using the `<li>` tag. The `<li>` or list item tag is used to describe an item in a list.
@@ -335,7 +335,7 @@ Under the heading saying William Shakespeare create an unordered list. Add the f
 * Death Location:
 Find out what year William Shakespeare was born and died and where and add this information to your unordered list.
 
-#33 Ordered Lists
+### Step 16: Ordered Lists
 Some lists, however, will require a bit more structure. HTML provides the ordered list for when you need the extra ordering that unordered lists don't provide. Ordered lists are like unordered lists, except that each list item is numbered. You can create the ordered list with the `<ol>` tag and then add individual list items to the list using `<li>` tags.
 ```
 <ol>
@@ -347,7 +347,7 @@ Some lists, however, will require a bit more structure. HTML provides the ordere
 ```
 Under the heading the William Shakespeare heading and after the unordered list add the paragraph `<p>William Shakespeare's most popular work:</p>` followed by an ordered list with the top three most popular pieces of work by William Shakespeare (do the online research to find out which ones they are).
 
-### Images
+### Step 17: Images
 All of the elements you've learned about so far (headings, paragraphs, lists, and spans) share one thing in common: they're composed entirely of text! What if you want to add content to your web page that isn't composed of text, like images?
 
 The `<img>` tag allows you to add an image to a web page. This is another example of a self-closing tag.
@@ -370,7 +370,7 @@ Right before the closing body tag add the following container:
 ```
 Add an image of William Shakespeare under the Portrait heading. Find an image online and use the URL that points directly to the image.
 
-### Image Alts
+### Step 18: Image Alts
 Part of being an exceptional web developer is making your site accessible to users of all backgrounds. Specifically, visually impaired users require more support from your web page so that they can experience the content on your page. HTML helps support visually impaired users with the alt attribute. The alt attribute is applied specifically to the `<img>` element. The value of alt should be a description of the image.
 
 ```
@@ -383,3 +383,114 @@ The alt attribute also serves the following purposes:
 Note: If the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should not be used.
 
 Add the alt attribute to the image. make sure the description actually describes the image.
+
+### Step 19: Linking Out
+We wouldn't be taking advantage of the full power of HTML (and the Internet), however, if we didn't link to other web pages. You can add links to a web page by adding an anchor element `<a>` and including the text of the link in between the opening and closing tags.
+```
+<a>This Is A Link To Wikipedia</a>
+```
+Wait a minute! Technically, the link in the example above is incomplete. How exactly is the link above supposed to work if there is no URL that will lead users to the actual Wikipedia page? The anchor element in the example above is incomplete without the href attribute. This attribute stands for hyperlink reference and is used to link to a file path, or the address to where a file is located (whether it is on your computer or another location).
+```
+<a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
+```
+In the example above, the href attribute has been set to the value of the URL https://www.wikipedia.org/. The example now shows the correct use of an anchor element.
+
+Below the image add a link to the wikipedia page about William Shakespeare (the link text should say William Shakespear).
+
+### Step 20: Linking at Will
+You've probably visited websites where not all links were made up of text. Maybe the links you clicked on were images, or some other form of content. So far, we've added links that were made up of only text, like the following:
+```
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank">Prickly Pear</a>
+```
+Text-only links, however, would significantly decrease your flexibility as a web developer!
+
+Thankfully, HTML allows you to turn nearly any element into a link by wrapping that element with an anchor element. With this technique, it's possible to turn images into links by simply wrapping the `<img>` element with an `<a>` element.
+```
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="#" alt="A red prickly pear fruit"/></a>
+```
+In the example above, an image of a prickly pear has been turned into a link by wrapping the outside of the `<img>` element with an `<a>` element.
+
+In index.html, transform the image on your page into a link (to the Wikipedia page about William Shakespeare) by wrapping the image element with an anchor element. Set the target attribute so that the link opens in a new window.
+
+### Step 21: New Page
+Have you ever clicked on a link and observed the resulting web page open in a new browser window? If so, you can thank the `<a>` element's target attribute. The target attribute specifies that a link should open in a new window. Why is it beneficial to open links in a new window?
+
+It's possible that one or more links on your web page link to an entirely different website. In that case, you may want users to read the linked website, but hope that they return to your web page. This is exactly when the target attribute is useful!
+
+For a link to open in a new window, the target attribute requires a value of `_blank`. The target attribute can be added directly to the opening tag of the anchor element, just like the href attribute.
+```
+<a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">The Brown Bear</a>
+```
+In the example above, setting the target attribute to `_blank` instructs the browser to open the relevant Wikipedia page in a new window.
+
+Note: In this exercise, we've used the terminology "open in a new window." It's highly likely that you are using a modern browser that opens up websites in new tabs, rather than new windows. Before the advent of browsers with tabs, additional browser windows had to be opened to view more websites. The target attribute, when used in modern browsers, will open new websites in a new tab.
+
+In the text link that leads to the Wikipedia, add the target attribute and set it equal to `_blank`.
+
+### Step 22: Relative Links
+Thus far you have learned how to link to external web pages. Many sites also link to internal web pages like Home, About, and Contact.
+
+Before we learn how to link between internal pages, let's establish where our files are stored. When making multi-page static websites, web developers often store HTML files in the root directory, or a main folder where all the files for the project are stored. As the size of the projects you create grows, you may use additional folders within the main project folder to organize your code.
+
+```
+about.html
+contact.html
+index.html
+```
+The example above shows three different files — `about.html`, `contact.html`, and `index.html` in one folder.
+
+If the browser is currently displaying `index.html`, it knows that `about.html` and `contact.html` are in the same folder as `index.html`, also referred to as the current folder. Since the browser knows the current folder, other files in the folder can be linked using a relative path.
+
+A relative path is a filename that shows the path to a local file (a file on the same website, such as `./index.html`) versus an absolute path (a full url, like `www.codecademy.com/learn/ruby` which is stored in a different folder). The `./` in `./index.html` tells the browser to look for the file in the current folder.
+```
+<a href="./contact.html">Contact</a>
+```
+In this example, the `<a>` tag is used with a relative path to link from the current HTML file to the `contact.html` file in the same folder. On the web page, Contact will appear as a link.
+
+* Directly below the opening `<body>` tag, add an anchor tag that links to `index.html` with a relative path. The link should say William Shakespear. 
+* Under the link to `index.html`, add an anchor tag that links to `about.html` using a relative path. The link should say About. Click the link to make sure it works!
+* Create a new file called `about.html` and insert the following HTML code it it:
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+</head>
+<body>
+  <nav>
+    <a href="/">William Shakespear</a>
+    <!-- web browsers respond to index.html and / the same way -->
+    <a href="./about.html">About</a>
+  </nav>
+
+<h1>About</h1>
+</body>
+</html>
+ ````
+ 
+ ### Step 23: Same Page
+At this point, we have all the content we want on our page. Since we have so much content, it doesn't all fit on the screen. How do we make it easier for a user to jump to different portions of our page? When users visit our site, we want them to be able to click a link and have the page automatically scroll to a specific section.
+
+In order to link to a target on the same page, we must give the target an id, like this:
+
+```
+<p id="top"> This is the top of the page! </p>
+<h1 id="bottom">This is the bottom! </h1>
+```
+In this example, the `<p>` element contains id of top and the `<h1>` element contains id of bottom. An id can be added to most elements on a webpage.
+
+An id should be descriptive to make it easier to remember the purpose of a link. The target link is a string containing the # character and the target element's id.
+
+```
+<ol>
+  <li><a href="#top">Top</a></li>
+  <li><a href="#bottom">Bottom</a></li>
+</ol>
+```
+In the example above, the links to `<p id="top">` and `<h1 id="bottom">` are embedded in an ordered list. These links appear in the browser as a numbered list of links. This is why we have been adding ids to our divs all along!
+
+Under the `<h1>` element that says The Brown Bear, create an unordered list with the following three list items:
+* Top
+* Bottom
+
+Wrap the text of each list item in the unordered list in an anchor element. Each anchor tag should link to the corresponding `<div>` on the page (The `<a>` element that contains the text "Introduction" links to #introduction).
