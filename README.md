@@ -40,7 +40,7 @@ To create HTML structure and content, we must add opening and closing `<html>` t
 ```
 Anything between the opening `<html>` and closing `</html>` tags will be interpreted as HTML code. Without these tags, it's possible that browsers could incorrectly interpret your HTML code.
 
-- [ ] After the `<title>` declaration add the opening (`<html>`) and closing (`</html>`) HTML tags.
+- [ ] After the `<!DOCTYPE html>` declaration add the opening (`<html>`) and closing (`</html>`) HTML tags.
 
 ### Step 4: HTML Anatomy
 Before we move forward, it's important that we discuss how HTML elements are structured. A simple example to illustrate this is the following HTML code:
@@ -100,7 +100,7 @@ Once the file has a body, many different types of content – including text, im
 
 In the example above, the opening body tag (`<body>`) is placed directly below the closing head tag (`</head>`), and the closing body tag (`</body>`) is placed directly above the closing html tag (`</html>`).
 
-Add a body to your web page using the `<body>` element and add the following code between your opening and closing body tags: `<p>Shall I compare thee to a summer's day? Thou art more lovely and more temperate</p>`
+- [ ] Add a body to your web page using the `<body>` element and add the following code between your opening and closing body tags: `<p>Shall I compare thee to a summer's day? Thou art more lovely and more temperate</p>`
 
 ### Step 7: Self-closing Tag
 Thus far we have only seen HTML elements with an opening and a closing tag. A few types of elements, however, require only one tag. Self-closing elements contain all the information the browser needs to render the element inside a single tag. Also, because they are single tags, they cannot wrap around raw text or other elements. The line break element `<br />` is one example of a self-closing tag. You can use it anywhere within your HTML code. The result is a line break in the browser.
@@ -119,7 +119,7 @@ line two
 ```
 Without the break tag, the browser would render line one and line two on the same line.
 
-Add a self-closing `<br />` tag after the question mark `?`.
+- [ ] Add a self-closing `<br />` tag after the question mark `?`.
 
 ### Step 8: HTML Structure
 The rest of this assignment will focus on how HTML is structured and some tools developers use to make code easier to interpret. HTML documents are organized as a collection of parent-child relationships. When an element is contained inside another element, it is considered the child of that element. The child element is said to be nested inside of the parent element.
@@ -142,7 +142,7 @@ In the example above, the `<p>` element is nested inside the `<body>` element. T
 
 In this example, the `<body>` element is the parent of the `<div>` element. Both the `<h1>` and `<p>` elements are children of the `<div>` element. Because the `<h1>` and `<p>` elements are in the same level, they are considered siblings, and are both grandchildren of the `<body>` element. Understanding this hierarchy is important, because child elements can inherit attributes from their parent element.
 
-Create a div element where the paragraph you have on your web page is a child of the div element. Add the heading `<h1>Shall I compare thee to a summer’s day? (Sonnet 18)</h1>` as a child of the body element.
+- [ ] Create a div element where the paragraph you have on your web page is a child of the div element. Add the heading `<h1>Shall I compare thee to a summer’s day? (Sonnet 18)</h1>` as a child of the body element.
 
 ### Step 9: Whitespace
 As the code in an HTML file grows, it becomes increasingly difficult to keep track of how elements are related. Programmers use two tools to visualize the relationship between elements: whitespace and indentation. Both tools take advantage of the fact that the position of elements in a browser is independent of the amount of whitespace or indentation in the `index.html` file.
@@ -170,7 +170,7 @@ A browser renders both examples the same way:
 Paragraph 1
 Paragraph 2
 ```
-Replace the paragraph you currently have with the following HTML code, making sure you use whitespace to make the code more readable by putting each element on its own line. 
+- [ ] Replace the paragraph you currently have with the following HTML code, making sure you use whitespace to make the code more readable by putting each element on its own line. 
 
 ```
 <p>Shall I compare thee to a summer’s day? <br />Thou art more lovely and more temperate.<br />Rough winds do shake the darling buds of May,<br />And summer’s lease hath all too short a date.<br /></p></p>Sometime too hot the eye of heaven shines,<br />And often is his gold complexion dimmed;<br />And every fair from fair sometime declines,</p><p>By chance, or nature’s changing course, untrimmed;<br />But thy eternal summer shall not fade,<br />Nor lose possession of that fair thou ow’st,<br />Nor shall death brag thou wand’rest in his shade,</p><p>When in eternal lines to Time thou grow’st.<br />So long as men can breathe, or eyes can see,<br />So long lives this, and this gives life to thee.</p>
@@ -178,7 +178,6 @@ Replace the paragraph you currently have with the following HTML code, making su
 
 ### Step 10: Indentation
 The second tool web developers use to make the structure of code easier to read is indentation. The World Wide Web Consortium, or W3C, is responsible for maintaining the style standards of HTML. At the time of writing, the W3C recommends 2 spaces of indentation when writing HTML code. Although your code will work without exactly two spaces, this standard is followed by the majority of professional web developers. Indentation is used to easily visualize which elements are nested within other elements.
-
 ```
 <body>
   <p>Paragraph 1</p>
@@ -187,20 +186,17 @@ The second tool web developers use to make the structure of code easier to read 
   </div>
 </body>
 ```
-
 In the example above, Paragraph 1 and the `<div>` tag are nested inside of the `<body>` tag, so they are indented two spaces. The Paragraph 2 element is nested inside of the `<div>` tag, so it is indented an additional two spaces. The spaces are inserted using the spacebar on your keyboard.
 
-Indent your code in `index.html` to match the W3C standards.
+- [ ] Indent your code in `index.html` to match the W3C standards.
 
 ### Step 11: Comments
 HTML files also allow you to add comments to your code.
 
 Comments begin with `<!-- and end with -->`. Any characters in between will be ignored by your browser. For example,
-
 ```
 <!-- This is a comment that the browser will not display. -->
 ```
-
 Including comments in your code is helpful for many reasons:
 * They help you (and others) understand your code if you decide to come back and review it at a much later date.
 * They allow you to experiment with new code, without having to delete old code.
@@ -217,7 +213,7 @@ In this example, the comment is used to denote that the following text makes up 
 
 In the example above, a valid HTML element (a paragraph element) has been "commented out." This practice is useful when there is code you want to experiment with, or return to, in the future.
 
-Add at least one comment to ```index.html``` explaining the purpose of the code.
+- [ ] Add at least one comment to ```index.html``` explaining the purpose of the code.
 
 ### Step 12: Headings
 Headings in HTML can be likened to headings in other types of media. For example, in newspapers, large headings are typically used to capture a reader's attention. Other times, headings are used to describe content, like the title of a movie or an educational article. HTML follows a similar pattern. In HTML, there are six different headings, or heading elements. Headings can be used for a variety of purposes, like titling sections, articles, or other forms of content.
@@ -236,7 +232,7 @@ The following example code uses a headline intended to capture a reader's attent
 <h1>BREAKING NEWS</h1>
 ```
 
-In ```index.html``, add an `<h1>` heading under the opening body tag. The heading should say: Poems by William Shakespeare, change the existing h1-level heading to a h2-level heading and add another h2-level heading below the h1-level heading. The new headings should say: All the worlds a stage.
+- [ ] In `index.html`, add an `<h1>` heading under the opening body tag. The heading should say: Poems by William Shakespeare, change the existing h1-level heading to a h2-level heading and add another h2-level heading below the h1-level heading. The new headings should say: All the worlds a stage.
 
 ### Step 13: Text Content Tags
 Headings are meant to emphasize or enlarge only a few words. If you want to add blocks of text in HTML, you can use a paragraph, div, or span:
@@ -245,7 +241,6 @@ Headings are meant to emphasize or enlarge only a few words. If you want to add 
 * `<span>`s contain short pieces of text or other HTML. They are primarily used to wrap small pieces of content that are on the same line as other content and do not break text into different sections.
 
 Take a look at each of these elements in action below:
-
 ```
 <div>
     <p>Technology</p>
@@ -260,10 +255,9 @@ Below, we're going to add several `<div>`s with ids to organize our text into se
 
 Note: We will explain the purpose of the ids that you will see in a later exercise. An id only needs to be in the opening tag of an element.
 
-Below the `<h1>` element that says Poems by William Shakespeare, add this opening `<div>` tag: `<div id="introduction">`. Add the closing `</div>` tag after the `<h2>` element that says All the worlds a stage. Always add two spaces of indentation when you nest elements inside of `<div>`s.
+- [ ] Below the `<h1>` element that says Poems by William Shakespeare, add this opening `<div>` tag: `<div id="introduction">`. Add the closing `</div>` tag after the `<h2>` element that says All the worlds a stage. Always add two spaces of indentation when you nest elements inside of `<div>`s.
 
-Below the `<h2>` element that says All the worlds a stage, add a paragraph that is indented the same amount of space as the other content inside of this `<div>`. The paragraph should contain the following text:
-
+- [ ] Below the `<h2>` element that says All the worlds a stage, add a paragraph that is indented the same amount of space as the other content inside of this `<div>`. The paragraph should contain the following text:
 ```
 All the world's a stage, And all the men and women merely players;
 They have their exits and their entrances,
@@ -278,25 +272,20 @@ Tags provided by HTML exist to organize and describe the content of web pages. T
 * The `<strong>` will generally render as bold emphasis.
 
 Take a look at each emphasis in action:
-
 ```
 <p><strong>The Nile River</strong> is the <em>longest</em> river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).</p>
 ```
-
 In this example, the `<strong>` and `<em>` tags are used to emphasize the text The Nile River (bolded) and longest (italics).
 
-Emphasize seven ages using the `<em>` tag.
-In the poem All the world's a stage, make the words men and women strong using the `<strong>` tag.
+- [ ] Emphasize seven ages using the `<em>` tag.
+- [ ] In the poem All the world's a stage, make the words men and women strong using the `<strong>` tag.
 
 ### Step 14: Line Breaks
 The spacing between code in an HTML file doesn't affect the positioning of elements in the browser. If you are interested in modifying the spacing in the browser, you can use HTML's line break element: `<br />`. The line break element is a self-closing tag. You can use it anywhere within your HTML code and a line break will be shown in the browser.
-
 ```
 <p>The Nile River is the longest river <br /> in the world, measuring over 6,850<br /> kilometers long (approximately 4,260 <br /> miles).</p>
 ```
-
 The code in the example above will result in an output that looks like the following:
-
 ```
 The Nile River is the longest river
 in the world, measuring over 6,850
@@ -307,7 +296,7 @@ You may see line breaks written as `<br />` or `<br>`. Both are valid break tags
 
 Note: Line breaks are not the standard way of manipulating the position of HTML elements, but it's likely that you'll come across them every now and then.
 
-In the poem All the World’s a Stage, add a line break (`<br />`) after the comma (,) on the first line.
+- [ ] In the poem All the World’s a Stage, add a line break (`<br />`) after the comma (,) on the first line.
 
 ### Step 15: Unordered Lists
 So far, all text has been in paragraph form. What if you want to display content in an easy-to-read list? In HTML, you can use an unordered list tag (`<ul>`) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.
@@ -322,7 +311,7 @@ The `<ul>` element cannot hold raw text and cannot automatically format raw text
 ```
 In the example above, the list was created using the `<ul>` tag and all individual list items were added using `<li>` tags.
 
-Under the heading saying William Shakespeare create an unordered list. Add the following items to the list:
+- [ ] Under the heading saying William Shakespeare create an unordered list. Add the following items to the list:
 * Birth Date: 
 * Death Date:
 * Birth Location:
@@ -339,7 +328,7 @@ Some lists, however, will require a bit more structure. HTML provides the ordere
   <li>Add eggs and vanilla extract to bowl.</li>
 </ol>
 ```
-Under the heading the William Shakespeare heading and after the unordered list add the paragraph `<p>William Shakespeare's most popular work:</p>` followed by an ordered list with the top three most popular pieces of work by William Shakespeare (do the online research to find out which ones they are).
+- [ ] Under the heading the William Shakespeare heading and after the unordered list add the paragraph `<p>William Shakespeare's most popular work:</p>` followed by an ordered list with the top three most popular pieces of work by William Shakespeare (do the online research to find out which ones they are).
 
 ### Step 17: Images
 All of the elements you've learned about so far (headings, paragraphs, lists, and spans) share one thing in common: they're composed entirely of text! What if you want to add content to your web page that isn't composed of text, like images?
@@ -356,7 +345,7 @@ Attributes provide more information about an element's content. They live direct
 * The name of the attribute
 * The value of the attribute
 
-Right before the closing body tag add the following container:
+- [ ] Right before the closing body tag add the following container:
 ```
 <div id="media">
   <h2>Portrait</h2>
@@ -366,7 +355,6 @@ Add an image of William Shakespeare under the Portrait heading. Find an image on
 
 ### Step 18: Image Alts
 Part of being an exceptional web developer is making your site accessible to users of all backgrounds. Specifically, visually impaired users require more support from your web page so that they can experience the content on your page. HTML helps support visually impaired users with the alt attribute. The alt attribute is applied specifically to the `<img>` element. The value of alt should be a description of the image.
-
 ```
 <img src="#" alt="A field of yellow sunflowers" />
 ```
@@ -376,7 +364,7 @@ The alt attribute also serves the following purposes:
 
 Note: If the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should not be used.
 
-Add the alt attribute to the image. make sure the description actually describes the image.
+- [ ] Add the alt attribute to the image. make sure the description actually describes the image.
 
 ### Step 19: Linking Out
 We wouldn't be taking advantage of the full power of HTML (and the Internet), however, if we didn't link to other web pages. You can add links to a web page by adding an anchor element `<a>` and including the text of the link in between the opening and closing tags.
@@ -389,7 +377,7 @@ Wait a minute! Technically, the link in the example above is incomplete. How exa
 ```
 In the example above, the href attribute has been set to the value of the URL https://www.wikipedia.org/. The example now shows the correct use of an anchor element.
 
-Below the image add a link to the wikipedia page about William Shakespeare (the link text should say William Shakespear).
+- [ ] Below the image add a link to the wikipedia page about William Shakespeare (the link text should say William Shakespear).
 
 ### Step 20: Linking at Will
 You've probably visited websites where not all links were made up of text. Maybe the links you clicked on were images, or some other form of content. So far, we've added links that were made up of only text, like the following:
@@ -404,7 +392,7 @@ Thankfully, HTML allows you to turn nearly any element into a link by wrapping t
 ```
 In the example above, an image of a prickly pear has been turned into a link by wrapping the outside of the `<img>` element with an `<a>` element.
 
-In index.html, transform the image on your page into a link (to the Wikipedia page about William Shakespeare) by wrapping the image element with an anchor element. Set the target attribute so that the link opens in a new window.
+- [ ] In index.html, transform the image on your page into a link (to the Wikipedia page about William Shakespeare) by wrapping the image element with an anchor element. Set the target attribute so that the link opens in a new window.
 
 ### Step 21: New Page
 Have you ever clicked on a link and observed the resulting web page open in a new browser window? If so, you can thank the `<a>` element's target attribute. The target attribute specifies that a link should open in a new window. Why is it beneficial to open links in a new window?
@@ -419,13 +407,12 @@ In the example above, setting the target attribute to `_blank` instructs the bro
 
 Note: In this exercise, we've used the terminology "open in a new window." It's highly likely that you are using a modern browser that opens up websites in new tabs, rather than new windows. Before the advent of browsers with tabs, additional browser windows had to be opened to view more websites. The target attribute, when used in modern browsers, will open new websites in a new tab.
 
-In the text link that leads to the Wikipedia, add the target attribute and set it equal to `_blank`.
+- [ ] In the text link that leads to the Wikipedia, add the target attribute and set it equal to `_blank`.
 
 ### Step 22: Relative Links
 Thus far you have learned how to link to external web pages. Many sites also link to internal web pages like Home, About, and Contact.
 
 Before we learn how to link between internal pages, let's establish where our files are stored. When making multi-page static websites, web developers often store HTML files in the root directory, or a main folder where all the files for the project are stored. As the size of the projects you create grows, you may use additional folders within the main project folder to organize your code.
-
 ```
 about.html
 contact.html
@@ -441,9 +428,9 @@ A relative path is a filename that shows the path to a local file (a file on the
 ```
 In this example, the `<a>` tag is used with a relative path to link from the current HTML file to the `contact.html` file in the same folder. On the web page, Contact will appear as a link.
 
-* Directly below the opening `<body>` tag, add an anchor tag that links to `index.html` with a relative path. The link should say William Shakespear. 
-* Under the link to `index.html`, add an anchor tag that links to `about.html` using a relative path. The link should say About. Click the link to make sure it works!
-* Create a new file called `about.html` and insert the following HTML code it it:
+- [ ] Directly below the opening `<body>` tag, add an anchor tag that links to `index.html` with a relative path. The link should say William Shakespear. 
+- [ ] Under the link to `index.html`, add an anchor tag that links to `about.html` using a relative path. The link should say About. Click the link to make sure it works!
+- [ ] Create a new file called `about.html` and insert the following HTML code it it:
 ```
 <!DOCTYPE html>
 <html>
@@ -460,7 +447,7 @@ In this example, the `<a>` tag is used with a relative path to link from the cur
 <h1>About</h1>
 </body>
 </html>
- ````
+ ```
  
  ### Step 23: Same Page
 At this point, we have all the content we want on our page. Since we have so much content, it doesn't all fit on the screen. How do we make it easier for a user to jump to different portions of our page? When users visit our site, we want them to be able to click a link and have the page automatically scroll to a specific section.
@@ -483,8 +470,8 @@ An id should be descriptive to make it easier to remember the purpose of a link.
 ```
 In the example above, the links to `<p id="top">` and `<h1 id="bottom">` are embedded in an ordered list. These links appear in the browser as a numbered list of links. This is why we have been adding ids to our divs all along!
 
-Under the `<h1>` element that says The Brown Bear, create an unordered list with the following three list items:
+Under the `<h1>` element that says William Shakespear, create an unordered list with the following three list items:
 * Top
 * Bottom
 
-Wrap the text of each list item in the unordered list in an anchor element. Each anchor tag should link to the corresponding `<div>` on the page (The `<a>` element that contains the text "Introduction" links to #introduction).
+- [ ] Wrap the text of each list item in the unordered list in an anchor element. Each anchor tag should link to the corresponding `<div>` on the page (The `<a>` element that contains the text "Introduction" links to #introduction).
